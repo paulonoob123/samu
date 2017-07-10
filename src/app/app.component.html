@@ -1,4 +1,14 @@
 <!--The whole content below can be removed with the new code.-->
 <div style="text-align:center" class="title">
-  <h1>{{title}}</h1>
+  <h1>{{minhauf.nome}}</h1>
 </div>
+<h5>ID: {{minhauf.id}}</h5>
+<h5>Área: {{minhauf.area}}m²</h5>
+<h5>Média municípios atendidos: {{media}}</h5>
+
+<ul>
+  <li *ngFor="let mun of municipiosAtendidos">
+    Ano: {{mun.ano}}  // Quantidade: {{mun.valor}}
+
+  </li>
+</ul>
