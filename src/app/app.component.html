@@ -1,14 +1,6 @@
-<!--The whole content below can be removed with the new code.-->
 <div style="text-align:center" class="title">
-  <h1>{{minhauf.nome}}</h1>
+  <a routerLink="/resumo">Resumo</a>
+  <a routerLink="/dadosDaUF">Dados da UF</a>
+  <a routerLink="/todosOsDados">Todos os dados</a>
 </div>
-<h5>ID: {{minhauf.id}}</h5>
-<h5>Área: {{minhauf.area}}m²</h5>
-<h5>Média municípios atendidos: {{media}}</h5>
-
-<ul>
-  <li *ngFor="let mun of municipiosAtendidos">
-    Ano: {{mun.ano}}  // Quantidade: {{mun.valor}}
-
-  </li>
-</ul>
+<router-outlet></router-outlet>

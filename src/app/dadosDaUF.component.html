@@ -1,0 +1,9 @@
+<div style="text-align:center" class="title">
+  <h1>{{uf.nome}}</h1>
+  <h3>{{uf.id}}</h3>
+  <h2>{{uf.area}} km²</h2>
+  <li *ngFor = "let dado of dados">
+    <span>{{dado.ano}} // {{dado.valor}}</span>
+  </li>
+  <h2>Média = {{media}}</h2>
+</div>
